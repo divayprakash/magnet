@@ -27,3 +27,20 @@ input[type='text'] {
 #copylink, #openlink {
   display: none;
 }
+
+.svg-icon {
+  display: inline-flex;
+  align-self: center;
+  position: relative;
+  height: 2em;
+  width: 2em;
+  margin-right: 0.5em;
+}
+.svg-icon svg {
+  height: 2em;
+  width: 2em;
+}
+.svg-icon.svg-baseline svg {
+  bottom: -0.5em;
+  position: absolute;
+}
