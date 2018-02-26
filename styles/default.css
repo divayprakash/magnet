@@ -10,11 +10,13 @@
 *,
 *:after,
 *:before {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 62.5%;
 }
 
@@ -66,8 +68,10 @@ input[type='text'] {
   background-color: transparent;
   border: 0.1rem solid #d1d1d1;
   border-radius: .4rem;
-  box-shadow: none;
-  box-sizing: inherit;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
   height: 3.8rem;
   padding: .6rem 1.0rem;
   width: 100%;
@@ -87,20 +91,29 @@ input[type='text']:focus {
 }
 
 .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   padding: 0;
   margin-left: -1.0rem;
   width: calc(100% + 2.0rem);
 }
 
 .row.row-center {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .row .column {
   display: block;
-  flex: 1 1 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   margin-left: 0;
   max-width: 100%;
   width: 100%;
@@ -158,6 +171,9 @@ html, body {
 }
 
 body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d4fc79), to(#96e6a1));
+  background-image: -webkit-linear-gradient(#d4fc79 0%, #96e6a1 100%);
+  background-image: -o-linear-gradient(#d4fc79 0%, #96e6a1 100%);
   background-image: linear-gradient(#d4fc79 0%, #96e6a1 100%);
 }
 
@@ -181,8 +197,11 @@ input[type='text'] {
 }
 
 .svg-icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   position: relative;
   height: 2em;
   width: 2em;
@@ -208,30 +227,53 @@ input[type='text'] {
 }
 
 .github-corner:hover .octo-arm {
-  animation: octocat-wave 560ms ease-in-out
+  -webkit-animation: octocat-wave 560ms ease-in-out;
+          animation: octocat-wave 560ms ease-in-out
+}
+
+@-webkit-keyframes octocat-wave {
+  0%, 100% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0)
+  }
+  20%, 60% {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg)
+  }
+  40%, 80% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg)
+  }
 }
 
 @keyframes octocat-wave {
   0%, 100% {
-      transform: rotate(0)
+      -webkit-transform: rotate(0);
+              transform: rotate(0)
   }
   20%, 60% {
-    transform: rotate(-25deg)
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg)
   }
   40%, 80% {
-    transform: rotate(10deg)
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg)
   }
 }
 @media (max-width: 500px) {
   .github-corner:hover .octo-arm {
-    animation: none
+    -webkit-animation: none;
+            animation: none
   }
   .github-corner .octo-arm {
-    animation: octocat-wave 560ms ease-in-out
+    -webkit-animation: octocat-wave 560ms ease-in-out;
+            animation: octocat-wave 560ms ease-in-out
   }
 }
 
 .row .column.column-100 {
-  flex: 0 0 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
   max-width: 100%;
 }
