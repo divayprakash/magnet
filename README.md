@@ -1,7 +1,6 @@
 # Magnet
 
-Convert torrent hash to magnet link
-
+Convert torrent hash to magnet link  
 A small tool by [@divayprakash](https://divayprakash.github.io/)
 
 ### Attributions
@@ -12,5 +11,5 @@ A small tool by [@divayprakash](https://divayprakash.github.io/)
 * [@cimi](https://github.com/cimi/) for transparent github corner. See [here](https://gist.github.com/cimi/5b273c98bc9b37464cc6c7ce4340550b)
 
 ### License
-Copyright (c) 2018 Divay Prakash
+Copyright (c) 2018 Divay Prakash  
 [The MIT License](https://github.com/divayprakash/magnet/blob/master/LICENSE)
