@@ -1,3 +1,11 @@
+/*!
+ * Magnet default JS
+ * https://divayprakash.github.io/magnet
+ *
+ * Copyright (c) 2018 Divay Prakash
+ * Licensed under the MIT license
+ */
+
 var field = "";
 var getButton = "";
 var copyButton = "";
